@@ -68,7 +68,6 @@ public class ZKUtil {
             @Override
             public void handleChildChange(String parentPath, List<String> currentChilds) throws Exception {
                 logger.info("清除/更新本地缓存 parentPath=【{}】,currentChilds=【{}】", parentPath,currentChilds.toString());
-
                 //更新所有缓存/先删除 再新增
                 serverCache.updateCache(currentChilds) ;
             }

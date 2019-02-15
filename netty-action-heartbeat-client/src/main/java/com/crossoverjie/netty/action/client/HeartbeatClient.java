@@ -70,6 +70,7 @@ public class HeartbeatClient {
                 LOGGER.info("客户端手动发消息成功={}", JSON.toJSONString(customProtocol)));
 
     }
+
     /**
      * 发送消息字符串
      *
